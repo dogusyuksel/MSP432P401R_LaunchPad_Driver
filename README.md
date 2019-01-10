@@ -81,3 +81,19 @@ eg: readGPIOIntputPolling(5, 0); //this is for P5.0
 ********************************************/
 uint8_t readGPIOIntputPolling(uint16_t port, uint16_t pin);
 ```
+
+ADC
+------------------
+
+```ruby
+/*************************************
+This function sets A6 (P4.6) and A7 (P4. 6) pins as analog input
+*************************************/
+void ADC_Init(void);
+
+
+/*************************************
+This function gets A6 and A7 values when the function calles
+*************************************/
+void ADC_Read(uint32_t *ch6, uint32_t *ch7);
+```
